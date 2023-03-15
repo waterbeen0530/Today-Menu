@@ -21,12 +21,15 @@ export default function Header() {
 }
 
 const Container = styled.div`
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 70px;
   border-bottom: solid 1px ${theme.lightGrayColor};
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ${theme.whiteColor};
 `;
 
 const Wrapper = styled.div`
