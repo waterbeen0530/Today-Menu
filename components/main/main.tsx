@@ -45,7 +45,7 @@ export default function Main() {
 
 const Container = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +53,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   width: 70%;
+  margin-top: 90px;
   gap: 140px;
   display: flex;
   align-items: center;
@@ -86,6 +87,7 @@ const Items = styled.div`
   background-color: ${theme.whiteColor};
   border: solid 1px ${theme.lightGrayColor};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   &:hover {
     animation: shaking 0.3s;
     animation-direction: alternate;
@@ -93,6 +95,7 @@ const Items = styled.div`
     animation-fill-mode: forwards;
     cursor: pointer;
   }
+
   @keyframes shaking {
     0% {
       transform: translateY(0);
